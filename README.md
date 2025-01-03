@@ -1,3 +1,4 @@
 # GAT-RISC-V-ROADSHOW
 
-![1](https://github.com/user-attachments/assets/517a9b0d-4e60-40b6-be82-af287dab3a39)
+
+![gatworkshop](https://github.com/user-attachments/assets/9fd60b88-75be-4401-8961-ba5d76e43e77)
