@@ -19,6 +19,9 @@ Task 1:
 
 ![task1-2](https://github.com/user-attachments/assets/ac24a7d2-a901-43d3-8835-26d67f7e3d61)
 
+![task1-3](https://github.com/user-attachments/assets/291c307a-c25a-4204-b233-8841f4c25305)
+
+
 
 
 
