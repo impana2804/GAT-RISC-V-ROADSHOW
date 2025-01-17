@@ -12,3 +12,6 @@
 Task 1:
 
 ![c based lab](https://github.com/user-attachments/assets/919edf97-b9d1-4f6c-8f3a-56706c8957f5)
+
+![risc-v lab](https://github.com/user-attachments/assets/ed67046d-6dc5-4bff-9f3b-4b30b43699dc)
+
