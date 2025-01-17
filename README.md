@@ -10,3 +10,4 @@
 ![gatworskshop4](https://github.com/user-attachments/assets/ac145e09-647f-4b5b-87ac-fb0f2492d3a4)
 
 Task 1:
+![c based lab](https://github.com/user-attachments/assets/919edf97-b9d1-4f6c-8f3a-56706c8957f5)
