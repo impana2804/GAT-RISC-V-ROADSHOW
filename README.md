@@ -15,3 +15,6 @@ Task 1:
 
 ![risc-v lab](https://github.com/user-attachments/assets/ed67046d-6dc5-4bff-9f3b-4b30b43699dc)
 
+![risc-v lab 1](https://github.com/user-attachments/assets/a47b7fc6-7c29-4d80-9284-af1d0bf6ab3b)
+
+
