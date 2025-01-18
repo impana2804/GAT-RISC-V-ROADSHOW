@@ -38,8 +38,10 @@
 
 # Task 3
 
-
-
+The R,I,S,B,U and J instruction types are commonly used in RISC(Reduced
+ instruction set computing)architectures,such as MIPS or RISC-V,and help in defining how instructions are encoded and processed by the CPU.
+RISC-V RV32 refers to a 32-bit RISC-V 
+the RISC-V RV32 instruction set has 6 main instructions types,based on their encoding format.These types are determined by how operands and immediate values are encoded in the instruction.The six instructions types are:
 
 
 
