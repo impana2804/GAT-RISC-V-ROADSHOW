@@ -33,6 +33,7 @@
 
 ![object dump -ofast](https://github.com/user-attachments/assets/fde61ccb-cfbc-4939-a82d-af101d61a38c)
 
+![object dump -o1](https://github.com/user-attachments/assets/a61adc52-62ad-4a07-b2d8-160035eb2414)
 
 
 
