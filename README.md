@@ -1,3 +1,4 @@
+![object dump -ofast](https://github.com/user-attachments/assets/13e8033b-ae2c-4abc-8c3a-de5c70bfe160)
 # GAT-RISC-V-ROADSHOW
 
 
@@ -30,6 +31,7 @@
 
 ![spike simulation  -o1](https://github.com/user-attachments/assets/78c890ea-04ab-427d-8296-2e770795965a)
 
+![object dump -ofast](https://github.com/user-attachments/assets/fde61ccb-cfbc-4939-a82d-af101d61a38c)
 
 
 
