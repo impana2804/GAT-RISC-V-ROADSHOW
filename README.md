@@ -54,15 +54,13 @@ RISC-V Instruction Sets
 
 ![image](https://github.com/user-attachments/assets/0ad2f314-8dee-45d5-b522-672b4713142b)
 
+1.R-Type:
 
+The R-Type instruction format in RISC-V is designed to perform register-to-regsiter operations.each field has a specific role,contributing to the functionality and flexibility of the instructions.Here's a detailed breakdown of eacg field:
 
+  > Opcode(7 bits)
 
-
-
-
-
-
-
+ 
 
 
 
