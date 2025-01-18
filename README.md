@@ -437,4 +437,14 @@ The J-type format has the following fields:
             The 32-bit binary representation of the instruction AUIPC a5, 0xffff0 is:
             0010111 01111 11111111111100000000
 
+# Task 4
+
+
+
+
+
+
+
+
+
 
