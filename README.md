@@ -26,3 +26,35 @@
 
 ![risc-v lab](https://github.com/user-attachments/assets/8058a505-1217-4a6f-9978-c69832515136)
 
+![risc-v lab 1](https://github.com/user-attachments/assets/8e7184b2-4dca-4a90-bba5-8690c773abd1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
