@@ -291,143 +291,144 @@ Example: If imm[20] = 0, imm[10:1] = 0101010101, imm[11] = 1, and imm[19:12] = 1
 
 1. lui a2,0x1
    
-- Opcode (7 bits): 0110111
-- rd (5 bits): 01010 — register a2
-- funct3: 000 — not used for lui because it's a U-type instruction.
-- rs1: not used for lui its a U-type instruction.
-- Immediate (20 bits of 0x1): 00000000000000000001 
+      - Opcode (7 bits): 0110111
+      - rd (5 bits): 01010 — register a2
+      - funct3: 000 — not used for lui because it's a U-type instruction.
+      - rs1: not used for lui its a U-type instruction.
+      - Immediate (20 bits of 0x1): 00000000000000000001 
 
-The 32-bit binary representation for the instruction lui a2,0x1 is:
-01101110101000000000000000000001
+          The 32-bit binary representation for the instruction lui a2,0x1 is:
+          01101110101000000000000000000001
 
 2. lui a0,0x21
 
-- Opcode: 0110111 (for LUI instruction)
-- rd: 01010 (register a0)
-- funct3: Not used in LUI, as it's a U-type instruction.
-- rs1: Not used in LUI, as it's a U-type instruction.
-- Immediate: 0000000000100001 (upper 20 bits of 0x21, shifted by 12 bits)
+      - Opcode(7 bites): 0110111 (for LUI instruction)
+      - rd(5 bites): 01010 (register a0)
+      - funct3: Not used in LUI, as it's a U-type instruction.
+      - rs1: Not used in LUI, as it's a U-type instruction.
+      - Immediate: 0000000000100001 (upper 20 bits of 0x21, shifted by 12 bits)
 
-The 32-bit representation of the instruction LUI a0, 0x21 is:
-0110111 01010 0000000000100001 000000000000
+          The 32-bit representation of the instruction LUI a0, 0x21 is:
+          0110111 01010 0000000000100001 000000000000
 
 3. addi sp,sp,-16
    
-- Opcode: 0010011 (for ADDI instruction)
-- rd: 00010 (for sp, register 2)
-- funct3: 000 (for ADDI)
-- rs1: 00010 (for sp, register 2)
-- Immediate: 111111111000 (two's complement binary representation of -16)
+      - Opcode(7 bites): 0010011 (for ADDI instruction)
+      - rd(5 bites): 00010 (for sp, register 2)
+      - funct3(3 bites): 000 (for ADDI)
+      - rs1(5 bites): 00010 (for sp, register 2)
+      - Immediate(12 bites): 111111111000 (two's complement binary representation of -16)
 
-The 32-bit binary representation of the instruction ADDI sp, sp, -16 is:
-0010011 00010 000 00010 111111111000
+          The 32-bit binary representation of the instruction ADDI sp, sp, -16 is:
+          0010011 00010 000 00010 111111111000
 
 4. addi a2,a2,954
 
-- Opcode: 0010011 (for ADDI instruction)
-- rd: 01010 (for a2, register 10)
-- funct3: 000 (for ADDI)
-- rs1: 01010 (for a2, register 10)
-- Immediate: 0000001110110010 (binary representation of 954)
+      - Opcode(7 bites): 0010011 (for ADDI instruction)
+      - rd(5 bits): 01010 (for a2, register 10)
+      - funct3(3 bites): 000 (for ADDI)
+      - rs1(5 bites): 01010 (for a2, register 10)
+      - Immediate(12 bites): 0000001110110010 (binary representation of 954)
 
-The 32-bit binary representation of the instruction ADDI a2, a2, 954 is:
-0010011 01010 000 01010 0000001110110010
+          The 32-bit binary representation of the instruction ADDI a2, a2, 954 is:
+          0010011 01010 000 01010 0000001110110010
 
 5. li a1,100
    
-- Opcode (7 bits): 0010011
-- rd (5 bits): 01011 (for register a1)
-- funct3 (3 bits): 000 (for ADDI)
-- rs1 (5 bits): 00000 (for register x0)
-- Immediate (12 bits): 0000001100100 (binary for 100)
+      - Opcode (7 bits): 0010011
+      - rd (5 bits): 01011 (for register a1)
+      - funct3 (3 bits): 000 (for ADDI)
+      - rs1 (5 bits): 00000 (for register x0)
+      - Immediate (12 bits): 0000001100100 (binary for 100)
 
-The 32-bit binary representation of the pseudo-instruction LI a1, 100 (equivalent to ADDI a1, x0, 100) is:
-0010011 01011 000 00000 0000001100100
+          The 32-bit binary representation of the pseudo-instruction LI a1, 100 (equivalent to ADDI a1, x0, 100) is:
+          0010011 01011 000 00000 0000001100100
 
 6. addi a0,a0,38
 
-- Opcode (7 bits): 0010011
--  rd (5 bits): 01010 (for register a0)
-- funct3 (3 bits): 000 (for ADDI)
-- rs1 (5 bits): 01010 (for register a0)
-- Immediate (12 bits): 0000000011000000 (binary for 384)
+      - Opcode (7 bits): 0010011
+      -  rd (5 bits): 01010 (for register a0)
+      - funct3 (3 bits): 000 (for ADDI)
+      - rs1 (5 bits): 01010 (for register a0)
+      - Immediate (12 bits): 0000000011000000 (binary for 384)
 
-The 32-bit binary representation of the instruction ADDI a0, a0, 384 is:
-0010011 01010 000 01010 0000000011000000
+           The 32-bit binary representation of the instruction ADDI a0, a0, 384 is:
+           0010011 01010 000 01010 0000000011000000
 
 7. sd ra,8(sp)
 
-- Opcode (7 bits): 0100011 (for SD instruction)
-- rs2 (5 bits): 00001 (for ra, register 1)
-- rs1(5 bites): 00010 (for sp, register 2)
-- funct3(3 bites): 011 (for SD)
-- Immediate (12 bites): 0000000 01000 (binary representation of 8)
+      - Opcode (7 bits): 0100011 (for SD instruction)
+      - rs2 (5 bits): 00001 (for ra, register 1)
+      - rs1(5 bites): 00010 (for sp, register 2)
+      - funct3(3 bites): 011 (for SD)
+      - Immediate (12 bites): 0000000 01000 (binary representation of 8)
 
-The 32-bit binary representation of the instruction sd ra,8(sp)
+           The 32-bit binary representation of the instruction sd ra,8(sp) is:
+           0100011 00001 00010 011 0000000 01000
 
 8. jal ra,1040c
    
-- Opcode (7 bites): 1101111 (for JAL instruction)
-- rd (5 bites): 00001 (for ra, register 1)
-- imm[20] (1 bit): 0 (highest bit of the immediate value)
-- imm[10:1] (10 bits): 0001101001 (middle 10 bits of the immediate value)
-- imm[11] (1 bit): 1 (the 11th bit of the immediate value)
-- imm[19:12] (8 bits): 01111100 (lowest 8 bits of the immediate value)
+      - Opcode (7 bites): 1101111 (for JAL instruction)
+      - rd (5 bites): 00001 (for ra, register 1)
+      - imm[20] (1 bit): 0 (highest bit of the immediate value)
+      - imm[10:1] (10 bits): 0001101001 (middle 10 bits of the immediate value)
+      - imm[11] (1 bit): 1 (the 11th bit of the immediate value)
+      - imm[19:12] (8 bits): 01111100 (lowest 8 bits of the immediate value)
 
-The 32-bit binary representation of the instruction JAL ra, 1040c is:
-0 0001101001 1 01111100 00001 1101111
+           The 32-bit binary representation of the instruction JAL ra, 1040c is:
+           0 0001101001 1 01111100 00001 1101111
 
 9. ld ra,8(sp)
 
-- Opcode (7 bits): 0000011 (for LD instruction)
-- rd (5 bits): 00001 (for ra, register 1)
-- funct3 (3 bits): 011 (for LD)
-- rs1 (5 bits): 00010 (for sp, register 2)
-- Immediate (12 bits): 000000001000 (binary representation of 8)
+      - Opcode (7 bits): 0000011 (for LD instruction)
+      - rd (5 bits): 00001 (for ra, register 1)
+      - funct3 (3 bits): 011 (for LD)
+      - rs1 (5 bits): 00010 (for sp, register 2)
+      - Immediate (12 bits): 000000001000 (binary representation of 8)
   
-The 32-bit binary representation of the instruction LD ra, 8(sp) is:
-0000011 00001 011 00010 000000001000
+         The 32-bit binary representation of the instruction LD ra, 8(sp) is:
+         0000011 00001 011 00010 000000001000
  
 10. li a0,0
 
-- Opcode (7 bites): 0010011 (for ADDI instruction)
-- rd (5 bites): 01010 (for a0, register 10)
-- funct3 (3 bites): 000 (for ADDI)
-- rs1 (5 bites): 00000 (for x0, register 0)
-- Immediate (12 bites): 000000000000 (binary representation of 0)
-- 
-The 32-bit binary representation of the instruction LI a0, 0 (which is typically translated to ADDI a0, x0, 0) is:
-0010011 01010 000 00000 000000000000
+     - Opcode (7 bites): 0010011 (for ADDI instruction)
+     - rd (5 bites): 01010 (for a0, register 10)
+     - funct3 (3 bites): 000 (for ADDI)
+     - rs1 (5 bites): 00000 (for x0, register 0)
+     - Immediate (12 bites): 000000000000 (binary representation of 0)
+
+         The 32-bit binary representation of the instruction LI a0, 0 (which is typically translated to ADDI a0, x0, 0) is:
+         0010011 01010 000 00000 000000000000
 
 11. addi sp,sp,16
 
-- Opcode (7 bits): 0010011 (for ADDI instruction)
--  rd (5 bits): 00010 (for sp, register 2)
-- funct3 (3 bits): 000 (for ADDI)
-- rs1 (5 bits): 00010 (for sp, register 2)
-- Immediate (12 bits): 000000001000 (binary representation of 16)
+       - Opcode (7 bits): 0010011 (for ADDI instruction)
+       -  rd (5 bits): 00010 (for sp, register 2)
+       - funct3 (3 bits): 000 (for ADDI)
+       - rs1 (5 bits): 00010 (for sp, register 2)
+       - Immediate (12 bits): 000000001000 (binary representation of 16)
    
-The 32-bit binary representation of the instruction ADDI sp, sp, 16 is:
-0010011 00010 000 00010 000000001000
+           The 32-bit binary representation of the instruction ADDI sp, sp, 16 is:
+           0010011 00010 000 00010 000000001000
 
 12. ret
    
-- Opcode (7 bits): 1100111 (for JALR instruction)
-- rd (5 bits): 00000 (for x0, register 0)
-- funct3 (3 bits): 000 (for JALR)
-- rs1 (5 bits): 00001 (for ra, register 1)
-- Immediate (12 bits): 000000000000 (binary representation of 0)
+      - Opcode (7 bits): 1100111 (for JALR instruction)
+      - rd (5 bits): 00000 (for x0, register 0)
+      - funct3 (3 bits): 000 (for JALR)
+      - rs1 (5 bits): 00001 (for ra, register 1)
+      - Immediate (12 bits): 000000000000 (binary representation of 0)
   
-The 32-bit binary representation of the instruction RET (which is translated to JALR x0, ra, 0) is:
-1100111 00000 000 00001 000000000000
+          The 32-bit binary representation of the instruction RET (which is translated to JALR x0, ra, 0) is:
+          1100111 00000 000 00001 000000000000
 
 13. auipc a5,0xffff0
     
-1. Opcode (7 bits): 0010111 (for AUIPC instruction)
-2. rd (5 bits): 01111 (for a5, register 15)
-3. Immediate (20 bits): 11111111111100000000 (binary representation of 0xffff0)
+       - Opcode (7 bits): 0010111 (for AUIPC instruction)
+       - rd (5 bits): 01111 (for a5, register 15)
+       - Immediate (20 bits): 11111111111100000000 (binary representation of 0xffff0)
 
-The 32-bit binary representation of the instruction AUIPC a5, 0xffff0 is:
-0010111 01111 11111111111100000000
+            The 32-bit binary representation of the instruction AUIPC a5, 0xffff0 is:
+            0010111 01111 11111111111100000000
 
 
