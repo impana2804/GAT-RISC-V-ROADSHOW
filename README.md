@@ -43,6 +43,14 @@ The R,I,S,B,U and J instruction types are commonly used in RISC(Reduced
 RISC-V RV32 refers to a 32-bit RISC-V 
 the RISC-V RV32 instruction set has 6 main instructions types,based on their encoding format.These types are determined by how operands and immediate values are encoded in the instruction.The six instructions types are:
 
+1. R-Type(Register Type)
+2. I-Type(Immediate Type)
+3. S-Type(Store Type)
+4. U-Type(Branch Type)
+5. B-Type(Upper Immediate Type)
+6. J-Type(Jump Type)
+
+
 
 
 
