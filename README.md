@@ -58,7 +58,7 @@ RISC-V Instruction Sets
 
 The R-Type instruction format in RISC-V is designed to perform register-to-regsiter operations.each field has a specific role,contributing to the functionality and flexibility of the instructions.Here's a detailed breakdown of eacg field:
 
-  . Opcode (7 bits)
+   . Opcode (7 bits)
 
 Identifies the broad category of the instruction (e.g., arithmetic, logical, shift). The opcode determines the type of operation and the instruction format (e.g., R- type, I-type, S-type).
 
@@ -281,7 +281,7 @@ Example: If imm[20] = 0, imm[10:1] = 0101010101, imm[11] = 1, and imm[19:12] = 1
   . rs1 (5 bits): Purpose: This field is not used in J-type instructions and is always 0. It is reserved for compatibility with other instruction formats.
 
 
-
+# 32-bit instructions code
 
 
 
