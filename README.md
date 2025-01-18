@@ -302,6 +302,15 @@ The 32-bit binary representation for the instruction lui a2,0x1 is:
 
 2. lui a0,0x21
 
+- Opcode: 0110111 (for LUI instruction)
+- rd: 01010 (register a0)
+- funct3: Not used in LUI, as it's a U-type instruction.
+- rs1: Not used in LUI, as it's a U-type instruction.
+- Immediate: 0000000000100001 (upper 20 bits of 0x21, shifted by 12 bits)
+
+The 32-bit representation of the instruction LUI a0, 0x21 is:
+0110111 01010 0000000000100001 000000000000
+
 
 
 
