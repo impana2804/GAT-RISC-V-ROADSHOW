@@ -28,6 +28,7 @@
 
 ![spike simulation](https://github.com/user-attachments/assets/69c2520d-6a62-4d64-bf57-b7390070c07a)
 
+![spike simulation  -o1](https://github.com/user-attachments/assets/78c890ea-04ab-427d-8296-2e770795965a)
 
 
 
