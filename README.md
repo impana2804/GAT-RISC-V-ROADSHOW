@@ -300,7 +300,7 @@ Example: If imm[20] = 0, imm[10:1] = 0101010101, imm[11] = 1, and imm[19:12] = 1
 The 32-bit binary representation for the instruction lui a2,0x1 is:
 01101110101000000000000000000001
 
-
+2. lui a0,0x21
 
 
 
