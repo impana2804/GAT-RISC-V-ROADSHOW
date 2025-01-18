@@ -13,8 +13,6 @@
 
 ![c based lab](https://github.com/user-attachments/assets/919edf97-b9d1-4f6c-8f3a-56706c8957f5)
 
-![risc-v lab](https://github.com/user-attachments/assets/ed67046d-6dc5-4bff-9f3b-4b30b43699dc)
-
 ![task1](https://github.com/user-attachments/assets/8522036a-81b9-4154-9fa5-ddb490c155d3)
 
 ![task1-2](https://github.com/user-attachments/assets/ac24a7d2-a901-43d3-8835-26d67f7e3d61)
@@ -26,7 +24,8 @@
 
 ![risc-v lab](https://github.com/user-attachments/assets/8058a505-1217-4a6f-9978-c69832515136)
 
-![risc-v lab 1](https://github.com/user-attachments/assets/8e7184b2-4dca-4a90-bba5-8690c773abd1)
+![RISC-V 2](https://github.com/user-attachments/assets/2417a512-db67-4cbd-88af-a39c8806e51d)
+
 
 
 
