@@ -311,6 +311,18 @@ The 32-bit binary representation for the instruction lui a2,0x1 is:
 The 32-bit representation of the instruction LUI a0, 0x21 is:
 0110111 01010 0000000000100001 000000000000
 
+3. addi sp,sp,-16
+   
+- Opcode: 0010011 (for ADDI instruction)
+- rd: 00010 (for sp, register 2)
+- funct3: 000 (for ADDI)
+- rs1: 00010 (for sp, register 2)
+- Immediate: 111111111000 (two's complement binary representation of -16)
+
+The 32-bit binary representation of the instruction ADDI sp, sp, -16 is:
+0010011 00010 000 00010 111111111000
+
+
 
 
 
