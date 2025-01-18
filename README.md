@@ -330,7 +330,7 @@ The 32-bit binary representation of the instruction ADDI sp, sp, -16 is:
 - rs1: 01010 (for a2, register 10)
 - Immediate: 0000001110110010 (binary representation of 954)
 
-The 32-bit binary representation* of the instruction ADDI a2, a2, 954 is:
+The 32-bit binary representation of the instruction ADDI a2, a2, 954 is:
 0010011 01010 000 01010 0000001110110010
 
 
