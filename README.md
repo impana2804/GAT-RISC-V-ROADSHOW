@@ -50,6 +50,7 @@ the RISC-V RV32 instruction set has 6 main instructions types,based on their enc
 5. B-Type(Upper Immediate Type)
 6. J-Type(Jump Type)
 
+RISC-V Instruction Sets
 ![image](https://github.com/user-attachments/assets/0ad2f314-8dee-45d5-b522-672b4713142b)
 
 
