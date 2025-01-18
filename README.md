@@ -26,6 +26,7 @@
 
 ![RISC-V 2](https://github.com/user-attachments/assets/2417a512-db67-4cbd-88af-a39c8806e51d)
 
+![spike simulation](https://github.com/user-attachments/assets/69c2520d-6a62-4d64-bf57-b7390070c07a)
 
 
 
