@@ -289,6 +289,20 @@ Example: If imm[20] = 0, imm[10:1] = 0101010101, imm[11] = 1, and imm[19:12] = 1
 
 ![RISC-V 2](https://github.com/user-attachments/assets/3c045f64-9889-43ea-8f53-f8bcc866483a)
 
+1. lui a2,0x1
+   
+- Opcode (7 bits): 0010011 — This corresponds to the ADDI operation.
+- rd (5 bits): 00010 — The destination register is sp (which is register 2).
+- funct3 (3 bits): 000 — This is the function code for the ADDI operation.
+- rs1 (5 bits): 00010 — The source register is sp (register 2).
+- Immediate (12 bits): 111111111000 — This is the two's complement binary representation of -16.
+
+The 32-bit binary representation for the ADDI sp, sp, -16 instruction in RISC-V is:
+0010011 00010 000 00010 111111111000
+
+
+
+
 
 
 
