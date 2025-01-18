@@ -24,4 +24,5 @@
 
 # Task 2
 
+![risc-v lab](https://github.com/user-attachments/assets/8058a505-1217-4a6f-9978-c69832515136)
 
