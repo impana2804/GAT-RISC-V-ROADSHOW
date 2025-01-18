@@ -333,7 +333,67 @@ The 32-bit binary representation of the instruction ADDI sp, sp, -16 is:
 The 32-bit binary representation of the instruction ADDI a2, a2, 954 is:
 0010011 01010 000 01010 0000001110110010
 
+5. li a1,100
+   
+- Opcode (7 bits): 0010011
+- rd (5 bits): 01011 (for register a1)
+- funct3 (3 bits): 000 (for ADDI)
+- rs1 (5 bits): 00000 (for register x0)
+- Immediate (12 bits): 0000001100100 (binary for 100)
 
+The 32-bit binary representation of the pseudo-instruction LI a1, 100 (equivalent to ADDI a1, x0, 100) is:
+0010011 01011 000 00000 0000001100100
+
+6. addi a0,a0,38
+
+- Opcode (7 bits): 0010011
+-  rd (5 bits): 01010 (for register a0)
+- funct3 (3 bits): 000 (for ADDI)
+- rs1 (5 bits): 01010 (for register a0)
+- Immediate (12 bits): 0000000011000000 (binary for 384)
+
+The 32-bit binary representation of the instruction ADDI a0, a0, 384 is:
+0010011 01010 000 01010 0000000011000000
+
+7. sd ra,8(sp)
+
+- Opcode (7 bits): 0100011 (for SD instruction)
+- rs2 (5 bits): 00001 (for ra, register 1)
+- rs1(5 bites): 00010 (for sp, register 2)
+- funct3(3 bites): 011 (for SD)
+- Immediate (12 bites): 0000000 01000 (binary representation of 8)
+
+The 32-bit binary representation of the instruction sd ra,8(sp)
+
+8. jal ra,1040c
+   
+- Opcode (7 bites): 1101111 (for JAL instruction)
+- rd (5 bites): 00001 (for ra, register 1)
+- imm[20] (1 bit): 0 (highest bit of the immediate value)
+- imm[10:1] (10 bits): 0001101001 (middle 10 bits of the immediate value)
+- imm[11] (1 bit): 1 (the 11th bit of the immediate value)
+- imm[19:12] (8 bits): 01111100 (lowest 8 bits of the immediate value)
+
+The 32-bit binary representation of the instruction JAL ra, 1040c is:
+0 0001101001 1 01111100 00001 1101111
+
+9. ld ra,8(sp)
+
+- Opcode (7 bits): 0000011 (for LD instruction)
+- rd (5 bits): 00001 (for ra, register 1)
+- funct3 (3 bits): 011 (for LD)
+- rs1 (5 bits): 00010 (for sp, register 2)
+- Immediate (12 bits): 000000001000 (binary representation of 8)
+  
+The 32-bit binary representation of the instruction LD ra, 8(sp) is:
+0000011 00001 011 00010 000000001000
+ 
+10 li a0,0
+
+
+13. addi sp,sp,16
+14. ret
+15. auipc a5,0xffff0
 
 
 
