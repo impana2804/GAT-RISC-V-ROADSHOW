@@ -283,6 +283,7 @@ Example: If imm[20] = 0, imm[10:1] = 0101010101, imm[11] = 1, and imm[19:12] = 1
 
 # 32-bit instructions code
 
+![RISC-V 2](https://github.com/user-attachments/assets/3c045f64-9889-43ea-8f53-f8bcc866483a)
 
 
 
