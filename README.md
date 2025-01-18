@@ -9,7 +9,7 @@
 ![gatworkshop3](https://github.com/user-attachments/assets/a3e874f8-c020-46c3-b2e8-b453325f3d78)
 ![gatworskshop4](https://github.com/user-attachments/assets/ac145e09-647f-4b5b-87ac-fb0f2492d3a4)
 
-#Task 1:
+# Task 1:
 
 ![c based lab](https://github.com/user-attachments/assets/919edf97-b9d1-4f6c-8f3a-56706c8957f5)
 
@@ -22,6 +22,6 @@
 ![task1-3](https://github.com/user-attachments/assets/291c307a-c25a-4204-b233-8841f4c25305)
 
 
-
+# Task 2
 
 
