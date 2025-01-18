@@ -58,7 +58,7 @@ RISC-V Instruction Sets
 
 The R-Type instruction format in RISC-V is designed to perform register-to-regsiter operations.each field has a specific role,contributing to the functionality and flexibility of the instructions.Here's a detailed breakdown of eacg field:
 
-> Opcode (7 bits)
+  . Opcode (7 bits)
 
 Identifies the broad category of the instruction (e.g., arithmetic, logical, shift). The opcode determines the type of operation and the instruction format (e.g., R- type, I-type, S-type).
 
@@ -66,7 +66,7 @@ Placement: Bits [6:0].
 
 Examples: 0110011: R-type operations (add, sub, and, or, etc.).
 
-> rd (Destination Register, 5 bits)
+  . rd (Destination Register, 5 bits)
 
 Specify the register where the result of the operation will be stored.
 
@@ -76,7 +76,7 @@ The register index ranges from 0 to 31, corresponding to the 32 general-purpose 
 
 Example: If rd = 01010, it means the result is stored in register x10.
 
-> rd (Destination Register, 5 bits)
+  . rd (Destination Register, 5 bits)
 
 Specifies the specific operation to be performed within the instruction category defined by opcode.
 
@@ -84,7 +84,7 @@ Placement: Bits [14:12]. funct3 works in combination with funct7 to differentiat
 
 Examples: For an ADD instruction: funct3 = 000. For an AND instruction: funct3 = 111.
 
- > rs1 (Source Register 1, 5 bits)
+  . rs1 (Source Register 1, 5 bits)
 
 Specifies the first source register containing one of the operands.
 
@@ -94,7 +94,7 @@ The register index ranges from 0 to 31, like rd. It holds the value used in comp
 
 Example: If rs1 = 00001, it means the first operand is in register x1.
 
- >  rs2 (Source Register 2, 5 bits)
+ . rs2 (Source Register 2, 5 bits)
 
 Specifies the second source register containing the second operand.
 
@@ -104,7 +104,7 @@ Like rs1, the register index ranges from 0 to 31. It provides the second value u
 
 Example: If rs2 = 00010, it means the second operand is in register x2.
 
- >  funct7 (Function Code, 7 bits)
+ . funct7 (Function Code, 7 bits)
 
 Provides additional specificity to distinguish between operations that share the same opcode and funct3.
 
