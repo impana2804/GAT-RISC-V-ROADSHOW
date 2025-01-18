@@ -388,13 +388,46 @@ The 32-bit binary representation of the instruction JAL ra, 1040c is:
 The 32-bit binary representation of the instruction LD ra, 8(sp) is:
 0000011 00001 011 00010 000000001000
  
-10 li a0,0
+10. li a0,0
 
+- Opcode (7 bites): 0010011 (for ADDI instruction)
+- rd (5 bites): 01010 (for a0, register 10)
+- funct3 (3 bites): 000 (for ADDI)
+- rs1 (5 bites): 00000 (for x0, register 0)
+- Immediate (12 bites): 000000000000 (binary representation of 0)
+- 
+The 32-bit binary representation of the instruction LI a0, 0 (which is typically translated to ADDI a0, x0, 0) is:
+0010011 01010 000 00000 000000000000
 
-13. addi sp,sp,16
-14. ret
-15. auipc a5,0xffff0
+11. addi sp,sp,16
 
+- Opcode (7 bits): 0010011 (for ADDI instruction)
+-  rd (5 bits): 00010 (for sp, register 2)
+- funct3 (3 bits): 000 (for ADDI)
+- rs1 (5 bits): 00010 (for sp, register 2)
+- Immediate (12 bits): 000000001000 (binary representation of 16)
+   
+The 32-bit binary representation of the instruction ADDI sp, sp, 16 is:
+0010011 00010 000 00010 000000001000
 
+12. ret
+   
+- Opcode (7 bits): 1100111 (for JALR instruction)
+- rd (5 bits): 00000 (for x0, register 0)
+- funct3 (3 bits): 000 (for JALR)
+- rs1 (5 bits): 00001 (for ra, register 1)
+- Immediate (12 bits): 000000000000 (binary representation of 0)
+  
+The 32-bit binary representation of the instruction RET (which is translated to JALR x0, ra, 0) is:
+1100111 00000 000 00001 000000000000
+
+13. auipc a5,0xffff0
+    
+1. Opcode (7 bits): 0010111 (for AUIPC instruction)
+2. rd (5 bits): 01111 (for a5, register 15)
+3. Immediate (20 bits): 11111111111100000000 (binary representation of 0xffff0)
+
+The 32-bit binary representation of the instruction AUIPC a5, 0xffff0 is:
+0010111 01111 11111111111100000000
 
 
