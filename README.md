@@ -1,4 +1,4 @@
-![object dump -ofast](https://github.com/user-attachments/assets/13e8033b-ae2c-4abc-8c3a-de5c70bfe160)
+
 # GAT-RISC-V-ROADSHOW
 
 
