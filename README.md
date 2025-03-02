@@ -456,41 +456,41 @@ All the instructions in the given verilog file is hard-coded. Hard-coded means t
 
                                                                                                
 1. ADD R6, R2, R1  - 	Adds the values in R2 and R1,stores result in R6
-   Standard RISC-VISA  -  32'h00110333
-   Hard Coded ISA  -   32'h02208300
+      Standard RISC-VISA  -  32'h00110333
+      Hard Coded ISA  -   32'h02208300
 2. SUB R7, R1, R2	 -  Subtracts the value in R2 from R1, stores result in R7
-   Standard RISC-VISA - 32'h402083b3
-   Hard Coded ISA  -   32'h02209380
+      Standard RISC-VISA - 32'h402083b3
+      Hard Coded ISA  -   32'h02209380
 3. AND R8, R1, R3	 - Performs bitwise AND between R1 and R3, stores in R8
-   Standard RISC-VISA -32'h0030f433
-   Hard Coded ISA  - 32'h0230a400
+      Standard RISC-VISA -32'h0030f433
+      Hard Coded ISA  - 32'h0230a400
 4. OR R9, R2, R5	  - Performs bitwise OR between R2 and R5, stores in R9
-   Standard RISC-VISA - 32'h005164b3
-   Hard Coded ISA  -  32'h02513480
+      Standard RISC-VISA - 32'h005164b3
+      Hard Coded ISA  -  32'h02513480
 5. XOR R10, R1, R4	- Performs bitwise XOR between R1 and R4, stores in R10
-   Standard RISC-VISA - 32'h0040c533
-   Hard Coded ISA  -  32'h0240c500
+     Standard RISC-VISA - 32'h0040c533
+     Hard Coded ISA  -  32'h0240c500
 6. SLT R1, R2, R4	 - Sets R1 to 1 if R2 < R4, else sets to 0
-   Standard RISC-VISA  - 32'h0045a0b3
-   Hard Coded ISA  -  32'h02415580
+     Standard RISC-VISA  - 32'h0045a0b3
+     Hard Coded ISA  -  32'h02415580
 7. ADDI R12, R4, 5	- Adds immediate value 5 to R4, stores result in R12	   
-   Standard RISC-VISA - 32'h004120b3
-   Hard Coded ISA  -  32'h00520600
+     Standard RISC-VISA - 32'h004120b3
+     Hard Coded ISA  -  32'h00520600
 8. BEQ R0, R0, 15	 - Branches to offset 15 if R0 equals R0	               
-   Standard RISC-VISA - 32'h00000f63
-   Hard Coded ISA  -  32'h00f00002
+     Standard RISC-VISA - 32'h00000f63
+     Hard Coded ISA  -  32'h00f00002
 9. SW R3, R1, 2	   - Stores word from R3 to memory address (R1 + 2)	       
-   Standard RISC-VISA  - 32'h0030a123
-   Hard Coded ISA  -  32'h00209181
+     Standard RISC-VISA  - 32'h0030a123
+     Hard Coded ISA  -  32'h00209181
 10. LW R13, R1, 2	 -  Loads word from memory address (R1 + 2) into R13	    
-   Standard RISC-VISA  - 32'h0020a6
-   Hard Coded ISA  -  32'h00208681
+     Standard RISC-VISA  - 32'h0020a6
+     Hard Coded ISA  -  32'h00208681
 11. SRL R16, R14, R2 -  Shifts R14 right by the value in R2, stores in R16  
-   Standard RISC-VISA - 32'h003023
-   Hard Coded ISA  -  32'h00271803
+     Standard RISC-VISA - 32'h003023
+     Hard Coded ISA  -  32'h00271803
 12. SLL R15, R1, R2	 - Shifts R1 left by the value in R2, stores in R15	   
-   Standard RISC-VISA - 32'h0097b3
-   Hard Coded ISA  -  32'h00208783
+     Standard RISC-VISA - 32'h0097b3
+     Hard Coded ISA  -  32'h00208783
 
 
 
