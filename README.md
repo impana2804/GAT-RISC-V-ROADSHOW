@@ -597,13 +597,13 @@ output reg clk_o1
 
 );
 
-reg [31:0] N1; //counter
+    reg [31:0] N1; //counter
 
-parameter DIV = 10_000_000; // Desired frequency
+    parameter DIV = 10_000_000; // Desired frequency
 
 always @(posedge clk or posedge reset)
 
-begin
+       begin
 
       if (reset) 
        
