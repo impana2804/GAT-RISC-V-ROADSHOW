@@ -515,10 +515,51 @@ All the instructions in the given verilog file is hard-coded. Hard-coded means t
      Standard RISC-VISA - 32'h0097b3
      Hard Coded ISA  -  32'h00208783
 
+# Verifying instructions using Gtkwave
 
+1. ADD R6,R2,R1
 
+   ![waveform_1](https://github.com/user-attachments/assets/976b5790-0be9-48fc-b803-367eececa5cc)
 
+2. SUB R7,R1,R2
+ 
+ ![waveform_02](https://github.com/user-attachments/assets/4ec7dddb-defa-4c5a-8358-c3cff91a744b)
 
+3. AND R8,R1,R3
+
+![waveform_03](https://github.com/user-attachments/assets/d216611f-99df-4ead-99f0-c7547225a66d)
+
+4. OR R9,R2,R5
+
+![waveform_04](https://github.com/user-attachments/assets/5270b222-e0c5-475f-9d8c-711c1044e1fc)
+
+5. XOR R10,R1,R4
+
+![waveform_05](https://github.com/user-attachments/assets/09102a4c-0bfe-4016-b262-4c9c1a1d4595)
+
+6. SLT R11,R2,R4
+
+![waveform_06](https://github.com/user-attachments/assets/e817face-1af3-45dc-99cb-2a06d57f259d)
+
+7. ADDI R12,R4,5
+
+![waveform_07](https://github.com/user-attachments/assets/c44a8731-cca2-4934-9ee4-c3f1604eb45b)
+
+8. SW R3,R1,2
+
+![waveform_08](https://github.com/user-attachments/assets/b194ab14-8421-4e0b-ac85-55e88168fc0f)
+
+9. SRL R16,R14,R2
+
+![waveform_09](https://github.com/user-attachments/assets/a08dde92-95b6-4c94-bf82-7c202ae90f02)
+
+10. BEQ R0,R0,15
+
+![waveform_10](https://github.com/user-attachments/assets/27e017ef-c0ac-48f9-9d2f-885297de2b75)
+
+11. SLL R15,R1,R2
+
+![waveform_11](https://github.com/user-attachments/assets/e8b59a13-2fc2-40a5-a8d0-2b4b608ebbf0)
 
 
 
