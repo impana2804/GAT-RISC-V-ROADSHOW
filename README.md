@@ -695,6 +695,8 @@ void NMI_Handler(void) {} void HardFault_Handler(void) { while (1) { } }
 2. Generate the bitstream
 3. Dump the bitstream to VSDminquadron board and verify the output
 4. Verify the output for different conditions
+   
+![circuit connection](https://github.com/user-attachments/assets/999dd6cf-611f-4d4a-83bf-449710787ace)
 
 
 
