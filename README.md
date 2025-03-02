@@ -569,14 +569,14 @@ All the instructions in the given verilog file is hard-coded. Hard-coded means t
 This project involves designing a digital clock divider circuit using the VSDSquadron Mini board. The circuit functions to reduce the input clock signal frequency, generating lower frequency outputs essential for all integrated circuits designs.
 
 
-Components Required:
+# Components Required:
 Power Supply VSDSquadron Mini FPGA Board Clock Source Breadboard Jumper Wires LEDs
 
 VSDminiquadron Board: VSDSquadron, a cutting-edge development board based on the RISC-V architecture that is fully open-source. This board presents an exceptional opportunity for individuals to learn about RISC-V and VLSI chip design utilizing only open-source tools, starting from the RTL and extending all the way to the GDSII. The possibilities for learning and advancement with this technology are limitless.
 
 ![Screenshot_2-3-2025_13650_www bing com](https://github.com/user-attachments/assets/66ff85ac-e1c4-4438-b671-5ee2c17e78e7)
 
-Circuit Connection:
+# Circuit Connection:
 Input Clock Source to VSDminiquadron board: Connect the clock source to the clock input pin on the VSDSquadron Mini.
 
 Output Pins: Configure multiple GPIO pins on the VSDminiquadron board as clock outputs.
@@ -635,7 +635,7 @@ begin
  
       N1 <= N1 + 1;
       
- end
+      end
 
  end
 
@@ -653,36 +653,36 @@ void NMI_Handler(void) attribute((interrupt("WCH-Interrupt-fast"))); void HardFa
 
 void setup() { GPIO_InitTypeDef GPIO_InitStructure = {0}; // Structure variable used for GPIO configuration
 
-// Enable clock for GPIOD
-RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD, ENABLE);
+    // Enable clock for GPIOD
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD, ENABLE);
 
-GPIO_InitStructure.GPIO_Pin = clock_PIN;
-GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;  // Defined as Input Floating Type
-GPIO_Init(GPIOD, &GPIO_InitStructure);
+    GPIO_InitStructure.GPIO_Pin = clock_PIN;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;  // Defined as Input Floating Type
+    GPIO_Init(GPIOD, &GPIO_InitStructure);
 
-// LED Pin Configuration as output push-pull
+    // LED Pin Configuration as output push-pull
 
-GPIO_InitStructure.GPIO_Pin = LED_PIN;
-GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;  // Defined as Output Push-Pull Type
-GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;  // Defined Speed
-GPIO_Init(GPIOD, &GPIO_InitStructure);
+    GPIO_InitStructure.GPIO_Pin = LED_PIN;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;  // Defined as Output Push-Pull Type
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;  // Defined Speed
+    GPIO_Init(GPIOD, &GPIO_InitStructure);
 
 }
 
 void loop() { // Check if sound sensor is triggered if (GPIO_ReadInputDataBit(GPIOD, clock_PIN)) { // Turn on LED GPIO_SetBits(GPIOD, LED_PIN); Delay_Ms(1000); // Keep LED on for 1 s // Turn off LED GPIO_ResetBits(GPIOD, LED_PIN);
 
-}
-Delay_Ms(1000);  
+     }
+     Delay_Ms(1000);  
 
 }
 
 int main() { NVIC_PriorityGroupConfig(NVIC_PriorityGroup_1); // Configure the NVIC priority group SystemCoreClockUpdate(); // Update system core clock Delay_Init(); // Initialize delay function setup(); // Configure GPIO pins
 
-while (1) {
+     while (1) {
     loop();
-}
+     }
 
-return 0;
+     return 0;
 }
 
 void NMI_Handler(void) {} void HardFault_Handler(void) { while (1) { } }
@@ -690,6 +690,7 @@ void NMI_Handler(void) {} void HardFault_Handler(void) { while (1) { } }
 ****************** END *******************
 
 # Testing & verification
+
 1. Using Vivado simulator synthesize and implement the clock divider circuit
 2. Generate the bitstream
 3. Dump the bitstream to VSDminquadron board and verify the output
