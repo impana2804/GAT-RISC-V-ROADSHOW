@@ -564,6 +564,11 @@ All the instructions in the given verilog file is hard-coded. Hard-coded means t
 
 # TASK 5
 
-# DOCUMENTATION OF PROJECT
+# DOCUMENTATION OF PROJECT : 3 bit binary to gray converter 
 
+# Introduction
+
+In digital systems, data transmission and processing errors can be a major challenge, especially when dealing with rapidly changing signals. Gray code, a special form of binary representation, helps minimize such errors by ensuring that only one bit changes at a time between successive values.
+
+This project focuses on designing a 3-bit Binary to Gray Code Converter using the VSDQuadron Mini board, a RISC-V-based development platform. The project will take a 3-bit binary input using push buttons, convert it into Gray code, and display the output using LEDs.
 
