@@ -562,6 +562,8 @@ All the instructions in the given verilog file is hard-coded. Hard-coded means t
 ![waveform_11](https://github.com/user-attachments/assets/e8b59a13-2fc2-40a5-a8d0-2b4b608ebbf0)
 
 
+# TASK 5
 
+# DOCUMENTATION OF PROJECT
 
 
