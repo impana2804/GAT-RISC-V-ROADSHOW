@@ -700,6 +700,10 @@ void NMI_Handler(void) {} void HardFault_Handler(void) { while (1) { } }
 
 
 
+https://github.com/user-attachments/assets/e2bb5eea-5569-4239-bd97-0c43adf78bba
+
+
+
 
 
 
